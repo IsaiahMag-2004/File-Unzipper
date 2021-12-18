@@ -12,3 +12,6 @@ while choice != 1 or choice != 2 or choice != 3 or choice != 4:
     choice = int(input())
 
 file_name = input("Enter the file name, with the .zip at the end of the name: ")
+
+#Create instance of zipfile
+with ZipFile (file_name, 'r') as zip:

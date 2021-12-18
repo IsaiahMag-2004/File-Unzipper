@@ -15,3 +15,5 @@ file_name = input("Enter the file name, with the .zip at the end of the name: ")
 
 #Create instance of zipfile
 with ZipFile (file_name, 'r') as zip:
+    if choice == 1:
+        zip.printdir()
